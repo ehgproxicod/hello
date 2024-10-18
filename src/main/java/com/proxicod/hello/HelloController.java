@@ -19,7 +19,7 @@ public class HelloController {
 		return "Hello people";
 	}
 	
-	@GetMapping(path = "")
+	@GetMapping(path = "/name")
 	public String sayHelloName(@RequestParam String name) {
 		return "Hello "+name;
 	}
