@@ -20,7 +20,7 @@ public class HelloController {
 	}
 	
 	@GetMapping(path = "/name")
-	public String sayHelloName(@RequestParam String name) {
-		return "Hello "+name;
+	public String sayHelloName(@RequestParam String name, @RequestParam String prenom) {
+		return "Hello "+name.toUpperCase()+" "+prenom ;
 	}
 }
